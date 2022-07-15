@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+.contenedor {
+    padding-bottom: 58px;
+  }
+
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.backgroundColor{
+  background-color: red;
+}
+
+.divCenter{
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+
+.imagenUPO{
+  width: 150px;
+    margin: 10px auto;
+}
+
+.positionFixed {
+  position: sticky;
+  top: 0px;
+}   
+
+body{
+  height: 53px;
+  background: rgb(230,181,146);
+  background: linear-gradient(180deg, rgba(230,181,146,0.7987570028011204) 11%, rgba(250,238,178,0.5466561624649859) 67%, rgba(0,0,3,0) 88%, rgba(56,76,182,0) 100%);
+background-repeat: no-repeat;
+  
+
+}

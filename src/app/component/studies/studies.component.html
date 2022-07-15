@@ -1,0 +1,305 @@
+<div class="container">
+  <div class="row g-4">
+
+    <!-- Sidenav START -->
+    <div class="col-lg-3">
+      
+      <!-- Navbar START-->
+      <nav class="navbar navbar-expand-lg mx-0 positionFixed" style="top:55px"> 
+        <div >
+
+            <!-- Card START -->
+            <div class="card overflow-hidden">
+              <!-- Cover image -->
+              <div class="h-50px" style="background-image:url(assets/images/bg/01.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+                <!-- Card body START -->
+                <div class="card-body pt-0">
+                  <div class="text-center">
+                  <!-- Avatar -->
+                  <div class="avatar avatar-lg mt-n5 mb-3">
+                    <a href="#!"><img class="avatar-img rounded border border-white border-3" src="../../../assets/images/Captura.PNG" alt=""></a>
+                  </div>
+                  <!-- Info -->
+                  <h2 class="mb-0"> <strong>Jose A. Martín </strong> </h2>
+                  <small>FullStack Developer</small>
+                  <p class="mt-3" style="text-align: justify;">Tengo una amplia formación en desarrollo de aplicaciones, comencé mi andadura profesional como
+                    desarrollador en Sadiel S.A, empresa en la que estuve alrededor de dos años. En la actualidad una de mis
+                    principales funciones es la del desarrollo de aplicaciones WEB. También poseo experiencia como QA, lo cual,
+                    me permite complementar mi formación e ir un paso por delante en la prevención de posibles defectos en la
+                    fase de desarrollo.
+                    Soy una persona dinámica y extrovertida con ganas de aprender y superarse día a día y a la que le
+                    encanta trabajar en equipo.</p>
+                </div>
+
+                <!-- Divider -->
+                <hr>
+
+                <!-- Side Nav START -->
+                <ul class="nav nav-link-secondary flex-column fw-bold gap-2" style="text-align: justify center;">
+                  <li class="list-inline-item ms-2 h6 fw-light mb-0">
+                    <a href="https://www.linkedin.com/in/josemartinbermudez/" target="_blank"><img class="me-2 h-20px fa-fw" src="../../../assets/images/linkedin.ico" alt=""><span>josemartinbermudez</span></a>
+                  </li>
+                  <li class="list-inline-item ms-2 h6 fw-light mb-0">
+                    <a href="https://github.com/jambermudez" target="_blank"><img class="me-2 h-20px fa-fw" src="../../../assets/images/github.ico" alt=""><span>josemartinbermudez </span></a>
+                  </li>
+
+                  <li class="list-inline-item ms-2 h6 fw-light mb-0">
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item ms-2 h6 fw-light mb-0"><img class="me-2 h-20px fa-fw" src="../../../assets/images/es.ico" alt=""></li>
+                      <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i> (Nativo) </li>
+                    </ul>
+                    <!-- <a class="nav-link" href="groups.html"> <img class="me-2 h-20px fa-fw" src="../../../assets/images//es.ico" alt=""><span>Groups </span></a> -->
+                  </li>
+                  <li class="list-inline-item ms-2 h6 fw-light mb-0">
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item ms-2 h6 fw-light mb-0"><img class="me-2 h-20px fa-fw" src="../../../assets/images/en.ico" alt=""></li>
+                      <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i></li>
+                      <li class="list-inline-item me-0 small"><i class="far fa-star text-warning"></i> (B1) </li>
+                    </ul>
+                    <!-- <a class="nav-link" href="groups.html"> <img class="me-2 h-20px fa-fw" src="../../../assets/images//es.ico" alt=""><span>Groups </span></a> -->
+                  </li>
+                </ul>
+                <!-- Side Nav END -->
+              </div>
+              <!-- Card body END -->
+              <!-- Card footer -->
+              <!-- <div class="card-footer text-center py-2">
+                <a class="btn btn-link btn-sm" href="my-profile.html">View Profile </a>
+              </div> -->
+            </div>
+            <!-- Card END -->
+
+
+            <!-- </div> -->
+        </div>
+      </nav>
+      <!-- Navbar END-->
+    </div>
+    <!-- Sidenav END -->
+
+    <!-- Main content START -->
+    <div class="col-md-8 col-lg-6 vstack gap-4" style="margin-top: 34px;">
+
+      <!-- Card feed item START -->
+      <div class="card">
+   
+
+        <!-- Card body START -->
+        <div class="card-body">
+
+          <div class="container" style="margin-top: 10px">
+
+            <mat-accordion>
+          
+          
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false"  [expanded]="true">
+          
+              <mat-expansion-panel-header >
+                <mat-panel-title>
+                  <h2>Formación academica</h2>
+                </mat-panel-title>
+                <mat-panel-description>
+                    
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <!-- Content START -->
+              <div class="row g-5">
+                <!-- Card item START -->
+                <div class="col-sm-7 col-lg-5 col-xl-4" style="margin: 30px auto 35px;" *ngFor="let skill of listStudies">
+
+                  <app-skill-card [skill]="skill"></app-skill-card>
+      
+                </div>
+                <!-- Card item END -->
+              </div>
+        <!-- Content END -->
+              
+
+            </mat-expansion-panel>
+          </mat-accordion>
+          
+          <mat-accordion>
+          
+            <mat-expansion-panel (opened)="panelOpenState = true" style="margin-top: 25px;"
+                                 (closed)="panelOpenState = false"  [expanded]="true">
+          
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h2>Experiencia Profesional</h2>
+                </mat-panel-title>
+                <mat-panel-description>
+                    
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <div class="card" style="margin-bottom: 35px;" *ngFor="let item of listExperience">
+                <div class="card-header">
+                  <strong style="text-align: justify;">{{item.company}}, </strong>{{item.date}}
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: justify;">{{item.puesto}}</h5>
+                  <p class="card-text" style="text-align: justify;">{{item.desc}}</p>
+                </div>
+              </div>
+          
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <!-- <div class="cardDesktop"> -->
+            <section>
+              <div class="container">
+                
+                <!-- Title -->
+                <div class="row mb-4"  style="margin-top: 45px;">
+                  <div class="col-lg-12 mx-auto">
+                    
+                        <h2>Skills</h2>
+      
+                    <!-- <p class="mb-0">Choose from hundreds of courses from specialist organizations</p> -->
+                  </div>
+                </div>
+  
+                <ul class="nav nav-tabs" style="border-bottom: solid; border-bottom-color: blue; border-bottom-width: thin;">
+                  <li class="nav-item">
+                    <button class="nav-link mb-2 mb-md-0 active" id="skills-tab-dev" data-bs-toggle="pill" data-bs-target="#skills-tabs-dev" type="button" role="tab" aria-controls="skills-tabs-dev" aria-selected="true">
+                      Development
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link mb-2 mb-md-0" id="skills-tab-web" data-bs-toggle="pill" data-bs-target="#skills-tabs-web" type="button" role="tab" aria-controls="skills-tabs-web" aria-selected="false">Web Design</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link mb-2 mb-md-0" id="skills-tab-fr" data-bs-toggle="pill" data-bs-target="#skills-tabs-fr" type="button" role="tab" aria-controls="skills-tabs-fr" aria-selected="false">Frameworks</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link mb-2 mb-md-0" id="skills-tab-bd" data-bs-toggle="pill" data-bs-target="#skills-tabs-bd" type="button" role="tab" aria-controls="skills-tabs-bd" aria-selected="false">BBDD</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link mb-2 mb-md-0" id="skills-tab-ic" data-bs-toggle="pill" data-bs-target="#skills-tabs-ic" type="button" role="tab" aria-controls="skills-tabs-ic" aria-selected="false">I. Continua</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link mb-2 mb-md-0" id="skills-tab-lx" data-bs-toggle="pill" data-bs-target="#skills-tabs-lx" type="button" role="tab" aria-controls="skills-tabs-lx" aria-selected="false">Linux</button>
+                  </li>
+                </ul>
+            
+                <!-- Tabs content START -->
+                <div class="tab-content" id="skills-tabContent">
+                  <!-- Content START Develop-->
+                  <div class="tab-pane fade active show" id="skills-tabs-dev" role="tabpanel" aria-labelledby="skills-tab-dev">
+                    <div class="row g-4">
+            
+                      <!-- Card item START -->
+                      <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let skill of listSkillsDev">
+                        <app-skill-card [skill]="skill"></app-skill-card>
+                      </div>
+                      <!-- Card item END -->
+            
+                    </div> <!-- Row END -->
+                  </div>
+                  <!-- Content END -->
+            
+                  <!-- Content START Web-->
+                  <div class="tab-pane fade" id="skills-tabs-web" role="tabpanel" aria-labelledby="skills-tab-web">
+                    <div class="row g-4">
+                        <!-- Card item START -->
+                        <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let skill of listSkillsWeb" >
+                          <app-skill-card [skill]="skill"></app-skill-card>
+                        </div>
+                        <!-- Card item END -->
+                    </div>
+                  </div>
+                  <!-- Content END -->
+            
+                  <!-- Content START Framework-->
+                  <div class="tab-pane fade" id="skills-tabs-fr" role="tabpanel" aria-labelledby="skills-tab-fr">
+                    <div class="row g-4">
+                      <!-- Card item START -->
+                      <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let skill of listSkillsFr">
+                        <app-skill-card [skill]="skill"></app-skill-card>
+                      </div>
+                      <!-- Card item END -->
+                    </div>
+                  </div>
+                  <!-- Content END -->
+            
+                  <!-- Content START BBDD-->
+                  <div class="tab-pane fade" id="skills-tabs-bd" role="tabpanel" aria-labelledby="skills-tab-bd">
+                    <div class="row g-4">
+                      <!-- Card item START -->
+                      <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let skill of listSkillsBD">
+                        <app-skill-card [skill]="skill"></app-skill-card>
+                      </div>
+                      <!-- Card item END -->
+                    </div>
+                  </div>
+                  <!-- Content END -->
+            
+                  <!-- Content START Integracion Continua-->
+                  <div class="tab-pane fade" id="skills-tabs-ic" role="tabpanel" aria-labelledby="skills-tab-ic">
+                    <div class="row g-4">
+                      <!-- Card item START -->
+                      <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let skill of listSkillsIC">
+                        <app-skill-card [skill]="skill"></app-skill-card>
+                      </div>
+                      <!-- Card item END -->
+                    </div>
+                  </div>
+                  <!-- Content END -->
+  
+                  <!-- Content START Linux -->
+                  <div class="tab-pane fade" id="skills-tabs-lx" role="tabpanel" aria-labelledby="skills-tab-lx">
+                    <div class="row g-4">
+                      <!-- Card item START -->
+                      <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let skill of listSkillsLx">
+                        <app-skill-card [skill]="skill"></app-skill-card>
+                      </div>
+                      <!-- Card item END -->
+                    </div>
+                  </div>
+                  <!-- Content END -->
+  
+                </div>
+                <!-- Tabs content END -->
+              </div>
+            </section>
+            
+            <!-- </div> -->
+
+
+          </div>
+
+
+        </div>
+
+        <!-- Card body END -->
+
+      </div>
+      <!-- Card feed item END -->
+
+        <!-- Load more button START -->
+        <!-- <a href="#!" role="button" class="btn btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
+          <span class="load-text"> Load more </span>
+          <div class="load-icon">
+            <div class="spinner-grow spinner-grow-sm" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </a> -->
+        <!-- Load more button END -->
+
+    </div>
+    <!-- Main content END -->
+
+
+  </div> <!-- Row END -->
+</div>
+

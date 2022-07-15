@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ad21e762-fcb7-4648-8d74-1bf130ecc9aa/microsoft.web/sites/subscriptions/ad21e762-fcb7-4648-8d74-1bf130ecc9aa/resourceGroups/josemartincvweb_group/providers/Microsoft.Web/sites/josemartincvweb",
+    "appService.deploySubpath": "dist\\cv",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}

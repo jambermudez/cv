@@ -1,0 +1,45 @@
+.derecha   { float: right; }
+.izquierda { float: left;  }
+
+
+.cardDesktop {
+    height: 60px;
+  }
+  
+  @media only screen and (min-width: 576px) {
+    .cardMovile {
+      display: none;
+    }
+  }
+
+  .cardMovile {
+    height: 60px;
+  }
+  
+  @media only screen and (max-width: 575px) {
+
+    .cardDesktop {
+        display: none;
+      }
+  }
+
+  @media (max-width: 991px) {
+    .movile {
+        width: 220px;
+    }
+    /*
+    .movile img {
+        height: 100px;
+    }*/
+  }
+
+  @media (max-width: 575px) {
+    .movile .imgSkill {
+        height: 100px;
+        background-color: black;
+        margin-top: 35px;
+    }
+    
+  }
+
+  

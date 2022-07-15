@@ -1,0 +1,38 @@
+.marginRight10px{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.nav-link:hover{
+    background-color: rgb(177, 182, 250);
+    color: aliceblue;
+}
+
+.nav-link.active{
+    background-color: blue;
+    color: aliceblue;
+}
+
+
+  .cardDesktop {
+    background-color: coral;
+    height: 60px;
+  }
+  
+  @media only screen and (min-width: 576px) {
+    .cardMovile {
+      display: none;
+    }
+  }
+
+  .cardMovile {
+    background-color: blue;
+    height: 60px;
+  }
+  
+  @media only screen and (max-width: 575px) {
+
+    .cardDesktop {
+        display: none;
+      }
+  }

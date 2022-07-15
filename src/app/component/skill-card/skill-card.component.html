@@ -1,0 +1,53 @@
+<!-- <div class="cardDesktop"> -->
+  <div class="card shadow h-100 movile" style="margin-top: 10px;">
+    <!-- Image -->
+    <img src="{{skill.image}}" class="card-img-top imgSkill" alt="{{skill.skill}}" style="margin: 5px auto; width: 156px;">
+    <div class="card-body pb-0" style="margin-bottom: 10px;">
+      <!-- Title -->
+      <h2 class="card-title fw-normal text-center"><p>{{skill.skill}}</p></h2>
+            <!-- Rating star -->
+            <ng-container *ngIf="skill.numberSkill>0">
+              <ul class="list-inline mb-0" style="text-align: center;">
+                <li *ngFor="let number of [].constructor(skill.numberSkill)" class="list-inline-item me-0 small">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li  *ngFor="let number of [].constructor(5 - skill.numberSkill)" class="list-inline-item me-0 small">
+                  <i class="far fa-star text-warning"></i>
+                </li>
+              </ul>
+          </ng-container>
+    </div>
+  </div>
+
+<!-- </div> -->
+
+<!-- <div class="cardMovile">
+
+
+<div class="card mb-3" style="max-width: 280px; margin: 0 auto">
+
+    <div class="col-md-12">
+      <span class="izquierda" style="background-color: red;">
+      <img src="{{skill.image}}" class="card-img-top" alt="course image" style="margin: 5px auto; width: 100px;">
+    </span>
+
+  <span class="derecha" style="text-align: center; background-color: aquamarine; width: 170px;">
+        <h5 class="card-title"><p>{{skill.skill}} M</h5>
+   
+                  <ng-container *ngIf="skill.numberSkill>0">
+                    <ul class="list-inline mb-0" style="text-align: center;">
+                      <li *ngFor="let number of [].constructor(skill.numberSkill)" class="list-inline-item me-0 small">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li  *ngFor="let number of [].constructor(5 - skill.numberSkill)" class="list-inline-item me-0 small">
+                        <i class="far fa-star text-warning"></i>
+                      </li>
+                    </ul>
+                </ng-container>
+
+              </span>
+      </div>
+    
+
+</div>
+</div> -->
